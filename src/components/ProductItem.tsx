@@ -7,7 +7,7 @@ const ProductItem = ({
   title,
   category,
   price,
-  popularity
+  popularity: _popularity,
 }: {
   id: string;
   image: string;
