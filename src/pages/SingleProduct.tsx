@@ -82,7 +82,7 @@ const SingleProduct = () => {
               <p className="text-base text-secondaryBrown">
                 {formatCategoryName(singleProduct?.category || "")}
               </p>
-              <p className="text-base font-bold">${ singleProduct?.price }</p>
+              <p className="text-base font-bold">Rs.{ singleProduct?.price }</p>
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -124,31 +124,46 @@ const SingleProduct = () => {
           </div>
           <div className="flex flex-col gap-3">
             <Button mode="brown" text="Add to cart" onClick={handleAddToCart} />
-            <p className="text-secondaryBrown text-sm text-right">
-              Delivery estimated on the Friday, July 26
+            <p className="text-secondaryBrown text-sm text-right"> 
+              Delivery will be done within 1 week of order placement
             </p>
           </div>
           <div>
             {/* drowdown items */}
             <Dropdown dropdownTitle="Description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
-              quos deleniti, mollitia, vitae harum suscipit voluptatem quasi, ab
-              assumenda accusantium rem praesentium accusamus quae quam tempore
-              nostrum corporis eaque. Mollitia.
+           Discover the charm of our Printed Silk Scarves, a perfect blend of quality and style. 
+           These scarves are designed with meticulous attention to detail, 
+           ensuring they stand out as a timeless addition to your wardrobe.
             </Dropdown>
 
             <Dropdown dropdownTitle="Product Details">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ad
-              at odio illo, necessitatibus, reprehenderit dolore voluptas ea
-              consequuntur ducimus repellat soluta mollitia facere sapiente.
-              Unde provident possimus hic dolore.
+              Material: Satin Silk
+              <br/>
+               <br/>
+              Size: 71 x 35 inches
+                <br/>
+               <br/>
+              Care: Easy maintenance, gentle hand wash
+ <br/>
+               <br/>
+              Versatility: Suitable for any occasion
+ <br/>
+               <br/>
+              Quality: Crafted for lasting elegance
+ <br/>
+               <br/>
+              Visibility: Radiates luxury with its lightweight feel and vibrant prints.
+ <br/>
+               <br/>
+              Care Instructions: For long-lasting beauty, a gentle hand wash is recommended. 
+              These scarves are designed to maintain their vibrant colors and luxurious texture.
+ <br/>
+               <br/>
+          Note: Please be aware that minor color variations may occur due to differences in display screens.
             </Dropdown>
 
             <Dropdown dropdownTitle="Delivery Details">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ad
-              at odio illo, necessitatibus, reprehenderit dolore voluptas ea
-              consequuntur ducimus repellat soluta mollitia facere sapiente.
-              Unde provident possimus hic dolore.
+             Delivery will be done within 1 week of order placement
             </Dropdown>
           </div>
         </div>

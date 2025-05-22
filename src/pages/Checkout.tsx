@@ -247,7 +247,7 @@ const Checkout = () => {
                     >
                       <option>United States</option>
                       <option>Canada</option>
-                      <option>Mexico</option>
+                      <option>Pakistan</option>
                     </select>
                   </div>
                 </div>
@@ -312,8 +312,9 @@ const Checkout = () => {
             </div>
 
             {/* Payment */}
+            
             <div className="mt-10 border-t border-gray-200 pt-10">
-              <h2 className="text-lg font-medium text-gray-900">Payment</h2>
+              <h2 className="text-lg font-medium text-gray-900">Payment: Right Now We are only accepting transfer through mobile wallets such as EasyPaisa and Jazzcash. Please select eTransfer. For Queries Contact: +92.310.1019020</h2>
 
               <fieldset className="mt-4">
                 <legend className="sr-only">Payment type</legend>
@@ -347,84 +348,10 @@ const Checkout = () => {
                   ))}
                 </div>
               </fieldset>
-
-              <div className="mt-6 grid grid-cols-4 gap-x-4 gap-y-6">
-                <div className="col-span-4">
-                  <label
-                    htmlFor="card-number"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Card number
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      id="card-number"
-                      name="cardNumber"
-                      autoComplete="cc-number"
-                      className="block w-full py-2 indent-2 border-gray-300 outline-none focus:border-gray-400 border border shadow-sm sm:text-sm"
-                      required={true}
-                    />
-                  </div>
-                </div>
-
-                <div className="col-span-4">
-                  <label
-                    htmlFor="name-on-card"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Name on card
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      id="name-on-card"
-                      name="nameOnCard"
-                      autoComplete="cc-name"
-                      className="block w-full py-2 indent-2 border-gray-300 outline-none focus:border-gray-400 border border shadow-sm sm:text-sm"
-                      required={true}
-                    />
-                  </div>
-                </div>
-
-                <div className="col-span-3">
-                  <label
-                    htmlFor="expiration-date"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Expiration date (MM/YY)
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      name="expirationDate"
-                      id="expiration-date"
-                      autoComplete="cc-exp"
-                      className="block w-full py-2 indent-2 border-gray-300 outline-none focus:border-gray-400 border border shadow-sm sm:text-sm"
-                      required={true}
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="cvc"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    CVC
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      name="cvc"
-                      id="cvc"
-                      autoComplete="csc"
-                      className="block w-full py-2 indent-2 border-gray-300 outline-none focus:border-gray-400 border border shadow-sm sm:text-sm"
-                      required={true}
-                    />
-                  </div>
-                </div>
-              </div>
+                  
+                  
+                
+              
             </div>
           </div>
 
@@ -477,7 +404,7 @@ const Checkout = () => {
 
                       <div className="flex flex-1 items-end justify-between pt-2">
                         <p className="mt-1 text-sm font-medium text-gray-900">
-                          ${product?.price}
+                          Rs.{product?.price}
                         </p>
 
                         <div className="ml-4">
@@ -494,25 +421,25 @@ const Checkout = () => {
                 <div className="flex items-center justify-between">
                   <dt className="text-sm">Subtotal</dt>
                   <dd className="text-sm font-medium text-gray-900">
-                    ${subtotal}
+                    Rs.{subtotal}
                   </dd>
                 </div>
                 <div className="flex items-center justify-between">
                   <dt className="text-sm">Shipping</dt>
                   <dd className="text-sm font-medium text-gray-900">
-                    ${subtotal ? 5 : 0}
+                    Rs.200
                   </dd>
                 </div>
                 <div className="flex items-center justify-between">
                   <dt className="text-sm">Taxes</dt>
                   <dd className="text-sm font-medium text-gray-900">
-                    ${subtotal ? subtotal / 5 : 0}
+                    Rs.0
                   </dd>
                 </div>
                 <div className="flex items-center justify-between border-t border-gray-200 pt-6">
                   <dt className="text-base font-medium">Total</dt>
                   <dd className="text-base font-medium text-gray-900">
-                    ${subtotal ? subtotal + 5 + subtotal / 5 : 0}
+                    Rs.{subtotal + 200 }
                   </dd>
                 </div>
               </dl>

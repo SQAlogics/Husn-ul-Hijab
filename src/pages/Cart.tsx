@@ -63,7 +63,7 @@ const Cart = () => {
                           ) : null}
                         </div>
                         <p className="mt-1 text-sm font-medium text-gray-900">
-                          ${product.price}
+                          Rs.{product.price}
                         </p>
                       </div>
 
@@ -140,7 +140,7 @@ const Cart = () => {
               <div className="flex items-center justify-between">
                 <dt className="text-sm text-gray-600">Subtotal</dt>
                 <dd className="text-sm font-medium text-gray-900">
-                  ${subtotal}
+                  Rs.{subtotal}
                 </dd>
               </div>
               <div className="flex items-center justify-between border-t border-gray-200 pt-4">
@@ -160,7 +160,7 @@ const Cart = () => {
                   </a>
                 </dt>
                 <dd className="text-sm font-medium text-gray-900">
-                  ${subtotal === 0 ? 0 : 5.0}
+                  Rs. 200
                 </dd>
               </div>
               <div className="flex items-center justify-between border-t border-gray-200 pt-4">
@@ -180,7 +180,7 @@ const Cart = () => {
                   </a>
                 </dt>
                 <dd className="text-sm font-medium text-gray-900">
-                  ${subtotal / 5}
+                  Rs.0
                 </dd>
               </div>
               <div className="flex items-center justify-between border-t border-gray-200 pt-4">
@@ -188,7 +188,7 @@ const Cart = () => {
                   Order total
                 </dt>
                 <dd className="text-base font-medium text-gray-900">
-                  ${subtotal === 0 ? 0 : subtotal + subtotal / 5 + 5}
+                  Rs. {subtotal + 200 } 
                 </dd>
               </div>
             </dl>

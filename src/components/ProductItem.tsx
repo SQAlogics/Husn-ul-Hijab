@@ -32,7 +32,7 @@ const ProductItem = ({
         {formatCategoryName(category)}{" "}
       </p>
       <p className="text-black text-2xl text-center font-bold max-md:text-xl">
-        ${price}
+        Rs.{price}
       </p>
       <div className="w-full flex flex-col gap-1">
         <Link

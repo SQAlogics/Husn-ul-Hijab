@@ -35,11 +35,11 @@ const SingleOrderHistory = () => {
           Order ID: {singleOrder.id}
         </h2>
         <p className="mb-2">Date: {formatDate(singleOrder.orderDate)}</p>
-        <p className="mb-2">Subtotal: ${ singleOrder.subtotal }</p>
-        <p className="mb-2">Shipping: $5</p>
-        <p className="mb-2">Tax: ${ singleOrder.subtotal / 5 }</p>
+        <p className="mb-2">Subtotal: Rs.{ singleOrder.subtotal }</p>
+        <p className="mb-2">Shipping: Rs.200</p>
+
         <p className="mb-2">
-          Total: $
+          Total: Rs.
           {(singleOrder.subtotal + 5 + singleOrder.subtotal / 5).toFixed(2)}
         </p>
         <p className="mb-2">Status: {singleOrder.orderStatus}</p>
@@ -60,7 +60,7 @@ const SingleOrderHistory = () => {
                   {product?.quantity}
                 </td>
                 <td className="py-3 px-4 border-b text-right">
-                  ${product?.price.toFixed(2)}
+                  Rs.{product?.price.toFixed(2)}
                 </td>
               </tr>
             ))}
